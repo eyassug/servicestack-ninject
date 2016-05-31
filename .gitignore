@@ -2,3 +2,5 @@ source/packages/
 source/ServiceStack.Ninject/bin/
 source/ServiceStack.Ninject/obj/
 *.suo
+source/ServiceStack.Ninject.Tests/bin/
+source/ServiceStack.Ninject.Tests/obj/

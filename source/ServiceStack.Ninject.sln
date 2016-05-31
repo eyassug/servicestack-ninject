@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Ninject", "ServiceStack.Ninject\ServiceStack.Ninject.csproj", "{62915119-E41E-453D-8DB2-F70DB5F0389D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Ninject.Tests", "ServiceStack.Ninject.Tests\ServiceStack.Ninject.Tests.csproj", "{5A146113-48CD-4881-8B47-5DA8DE0DBC41}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62915119-E41E-453D-8DB2-F70DB5F0389D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62915119-E41E-453D-8DB2-F70DB5F0389D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62915119-E41E-453D-8DB2-F70DB5F0389D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62915119-E41E-453D-8DB2-F70DB5F0389D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A146113-48CD-4881-8B47-5DA8DE0DBC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A146113-48CD-4881-8B47-5DA8DE0DBC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A146113-48CD-4881-8B47-5DA8DE0DBC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A146113-48CD-4881-8B47-5DA8DE0DBC41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
