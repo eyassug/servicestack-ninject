@@ -27,24 +27,7 @@ namespace Tests
             return "Shooting enemy with a gun!";
         }
     }
-    [Route("/api/sample")]
-    class SampleRequest : IReturn<string>
-    {
-
-    }
-    class SampleService : Service
-    {
-        readonly IWeapon _weapon;
-        public SampleService(IWeapon weapon)
-        {
-            _weapon = weapon;
-        }
-
-        public object Any(SampleRequest request)
-        {
-            return _weapon.Attack();
-        }
-    }
+    
 
     class SampleModule : NinjectModule
     {
@@ -108,12 +91,10 @@ namespace Tests
         {
             var port = "1331";
             var appHost = new SampleNinjectAppHost()
-                .Init()
-                .Start(string.Format("http://*:{0}/", port));
+                .Init();
 
             var weapon = appHost.Container.Adapter.TryResolve<IWeapon>();
             Assert.IsNotNull(weapon);
-            Assert.AreEqual("Slashing enemy with a sword!", weapon.Attack());
             Assert.AreEqual(typeof(Sword), weapon.GetType());
             
         }
