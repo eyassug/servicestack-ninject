@@ -1,0 +1,4 @@
+source/packages/
+source/ServiceStack.Ninject/bin/
+source/ServiceStack.Ninject/obj/
+*.suo
